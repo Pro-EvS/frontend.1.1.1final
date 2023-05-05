@@ -1,0 +1,11 @@
+.row{
+    padding: 30px;
+    background-color:rgb(233, 18, 100);
+}
+.card{
+ background-color:hsl(340, 96%, 69%);
+}
+h2{
+    text-align: center;
+    color:hsl(327, 75%, 25%);
+}

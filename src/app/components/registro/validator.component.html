@@ -1,0 +1,31 @@
+<div class="container">
+<form class="row g-3">
+    <div class="col-md-4">
+      <div class="form-outline">
+        <input type="text" placeholder="ingrese nuevo Usuario" class="form-control" [(ngModel)]="usuario.username" ngModel="username"  required />
+        <label class="form-label">Usuario</label>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-outline">
+        <input type="text" placeholder="ingrese su email" class="form-control" [(ngModel)]="usuario.email" ngModel="email" required />
+        <label class="form-label">Email </label>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group form-outline">
+        <input type="password" placeholder="ingrese su contraseña" [(ngModel)]="usuario.password" ngModel="password">
+        <label class="form-label">Contraseña</label>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value=""  required />
+        <label class="form-check-label">Validar datos</label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Registrar</button>
+    </div>
+  </form>
+</div>
