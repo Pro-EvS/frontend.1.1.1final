@@ -1,7 +1,14 @@
-<div class="row">
-    <div class="card">
-   <a href='sobremi'>Editar "Sobre Mi"</a>
-   <a href='experiencia'>Editar "Experiencia"</a>
-   <a href='educacion'>Editar "Estudios"</a>
-</div>
+<div>
+    <h3>Crud Educacion</h3>
+    <br>
+<textarea name="Educacionguardar" type="textarea" ></textarea>
+  <button class="btn btn-danger" (click)="Guardar(gEstudio)">Agregar </button>
+<br>
+<textarea name="EducacionBorrar" type="textarea"></textarea>
+<button class="btn btn-danger"(click)="editar(gEstudio)">Editar</button>
+<br>
+<button class="btn btn-danger" type="refresh" (click)="actualizar(gEstudio)">Actualizar</button>
+<br>
+<br>
+<button class="btn btn-danger" (click)="borrar(gEstudio)">Borrar</button>
 </div>

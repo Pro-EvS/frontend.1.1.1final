@@ -1,18 +1,19 @@
-<div>
+<tr ngFor*="let gEstudio of personaEstudios"> 
+<div >
     <br><br>
     <h2>Mis Estudios</h2>
 </div><br>
     <div class="row">
-     <div class="card">
+     <div class="card">{{gEstudio.values}}
         <div class="card-body">
             <h5 class="card-title"> Developer Web FullStack</h5>
             <p class="card-text">"Argentina Programa 4.0." Actualmente estudiando, (Segunda etapa del programa)
                 2022-2023. </p>
         </div>
-    </div>
+        </div>
     <div class="row">
         <div class="col-sm-6 mb-3 mb-sm-0">
-            <div class="card">
+            <div class="card">{{gEstudio.values}}
                  <div class="card-body">
             <h5 class="card-title"> Tecnicatura Superior en Gestion de Obras Sociales.</h5>
             <p class="card-text"> IPAP (actualmente estudiando 2023) </p>
@@ -20,7 +21,7 @@
     </div>
     </div><br>
     <div class="col-sm-6">
-    <div class="card">
+        <div class="card">{{gEstudio.values}}
         <div class="card-body">
             <h5 class="card-title">Developer Junior </h5>
             <p class="card-text"> "Sé Programar" Certificado por Argentina Programa, Inti, Ministerio de Economia
@@ -31,7 +32,7 @@
 </div><br><br>
 <div class="row">
 <div class="col-sm-6 mb-3 mb-sm-0">
-    <div class="card">
+    <div class="card">{{gEstudio.values}}
         <div class="card-body">
             <h5 class="card-title">Poda de Frutales</h5>
             <p class="card-text"> 2022. Municipalidad de General Roca.Rio Negro. </p>
@@ -77,7 +78,7 @@
 </div><br><br>
 <div class="col-sm-6">,
     <div class="card">
-        <div class="card-body">
+        <div class="card">
             <h5 class="card-title"> Gestión Empresarial.</h5>
             <p class="card-text"> Título Secundario.Centro de Educación Media. N° 116. General Roca R.N. </p>
         </div>
@@ -86,7 +87,7 @@
 </div><br><br>
     <div class="row">
          <div class="col-sm-6 mb-3 mb-sm-0">
-             <div class="card">
+            <div class="card">
                 <div class="card-body">
             <h5 class="card-title">Catedra Libre Natalio Kirsnerman</h5>
             <p class="card-text">Universidad Nacional del Comahue, 2014.</p>
@@ -102,3 +103,6 @@
     </div>
 </div>
 </div>
+
+<br>
+

@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { AngularFireModule } from '@angular/fire/compat';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -18,7 +20,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { EdicionComponent } from './components/edicion/edicion.component';
-import { ValidatorComponent } from './components/registro/validator.component';
+import { EducacionService } from './services/educacion.service';
+import { ExperienciaService } from './services/experiencia.service';
+import { SobreMiService } from './services/sobre-mi.service';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -37,14 +42,20 @@ import { ValidatorComponent } from './components/registro/validator.component';
     LoginComponent,
     HomeComponent,
     EdicionComponent,
-    ValidatorComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
   ],
-  providers: [],
+  providers: [
+    EducacionService,
+    ExperienciaService,
+    SobreMiService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

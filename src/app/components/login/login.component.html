@@ -1,22 +1,13 @@
-<div class="container">
-<div class="card text-center">
-    <div class="card-header">
+<form [formGroup]="form"  >
     <b>LOGIN</b>
-    </div>
-    <form ngClass="form-control">
-    <div class="card-body">
-        <input type="email" class="form-control m-2"  placeholder="ingrese su email" [(ngModel)]="usuario.email" ngModel="email" >
-        <label style="float:left;"> Email</label>
+    <div>
+      <label style="float:left;" for="email"> Email</label>
+        <input type="email"  formControlName="email" placeholder="ingrese  email" >
         <br><br>
-        <input type="password" class="form-control m-2"  placeholder="ingrese su password" [(ngModel)]="usuario.password" ngModel="password">
-        <label style="float:left;"> Password</label> 
+        <label class="form-label" for="InputPassword"  style="float:left;"> Password</label> 
+        <input type="password"  placeholder="ingrese password" >
         <br><br>
-
-        <button class="btn btn-primary btn-block m-2" (click)="editar()">Ingresar</button>
+        <button class="btn btn-primary btn-block m-2" type="submit" (ngSubmit)="onLogin()">Iniciar sesión</button> 
         <br><br>
-
-        <label>Aun no tienes Cuenta? <a href="registro">Registrarse</a> </label>
-    </div>
-</form>
-  </div>
-</div>
+        </div>
+      </form>   

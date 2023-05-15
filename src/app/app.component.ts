@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Routes } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ProyectoFinalPortfolio';
+
+  constructor(private http:HttpClient){ }
+
+  Url = "https://localhost:8080";
+
 }
